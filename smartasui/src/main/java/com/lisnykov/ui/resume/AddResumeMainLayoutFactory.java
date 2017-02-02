@@ -4,7 +4,9 @@ import com.lisnykov.model.entity.ResumeData;
 import com.lisnykov.utils.Gender;
 import com.lisnykov.utils.ResumeStringUtils;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
+import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.*;
+import com.vaadin.ui.themes.ValoTheme;
 
 /**
  * Created by pasha on 2/2/17.
@@ -36,6 +38,9 @@ public class AddResumeMainLayoutFactory {
 
         public AddResumeMainLayout init() {
 
+            fieldGroup = new BeanFieldGroup<ResumeData>(ResumeData.class);
+            resumeData = new ResumeData();
+
             firstName = new TextField(ResumeStringUtils.FIRST_NAME.getString());
             lastName = new TextField(ResumeStringUtils.LAST_NAME.getString());
             gender = new ComboBox(ResumeStringUtils.GENDER.getString());
@@ -52,19 +57,61 @@ public class AddResumeMainLayoutFactory {
             saveButton = new Button(ResumeStringUtils.SAVE_BUTTON.getString());
             clearButton = new Button(ResumeStringUtils.CLEARE_BUTTON.getString());
 
+            saveButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
+            clearButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
+
             gender.addItem(Gender.MALE.getString());
             gender.addItem(Gender.FEMALE.getString());
 
+            firstName.setNullRepresentation("");
+            lastName.setNullRepresentation("");
+            email.setNullRepresentation("");
+            address.setNullRepresentation("");
+            zipCode.setNullRepresentation("");
+
             return this;
         }
 
-        public AddResumeMainLayout layout() {
+        public AddResumeMainLayout bind() {
+            fieldGroup.bindMemberFields(this);
+
+            fieldGroup.setItemDataSource(resumeData);
+
             return this;
         }
+
+        public Component layout() {
+
+            setMargin(true);
+
+            address.setWidth("100%");
+
+            GridLayout gridLayout = new GridLayout(2, 6);
+            gridLayout.setSpacing(true);
+            gridLayout.setSizeUndefined();
+
+            gridLayout.addComponent(firstName, 0, 0);
+            gridLayout.addComponent(lastName, 1, 0);
+
+            gridLayout.addComponent(gender, 0, 1);
+            gridLayout.addComponent(age, 1, 1);
+
+            gridLayout.addComponent(email, 0, 2);
+
+            gridLayout.addComponent(address, 0, 3, 1, 3);
+            gridLayout.addComponent(zipCode, 0, 4);
+            gridLayout.addComponent(country, 1, 4);
+
+            gridLayout.addComponent(new HorizontalLayout(saveButton, clearButton), 0, 5);
+
+            return gridLayout;
+        }
+
+
     }
 
     public Component createComponent() {
-        return new AddResumeMainLayout().init().layout();
+        return new AddResumeMainLayout().init().bind().layout();
     }
 
 }

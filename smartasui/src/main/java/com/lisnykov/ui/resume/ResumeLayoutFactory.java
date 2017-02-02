@@ -17,12 +17,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 @SpringView(name = ResumeLayoutFactory.NAME, ui = MainUI.class)
 public class ResumeLayoutFactory extends VerticalLayout implements View {
 
+
+    public static final String NAME = "resume";
+
     @Autowired
     private AddResumeMainLayoutFactory addResumeMainLayoutFactory;
 
     private TabSheet tabSheet;
-
-    public static final String NAME = "resume";
 
     public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
         removeAllComponents();
