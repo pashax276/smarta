@@ -46,8 +46,8 @@
       <file leaf-file-name="ResumeLayoutFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/ResumeLayoutFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="38" column="81" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+            <state relative-caret-position="168">
+              <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,14 +58,35 @@
       <file leaf-file-name="AddResumeMainLayoutFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+            <state relative-caret-position="210">
+              <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2301#2302#0" expanded="true" />
-                <element signature="e#2336#2337#0" expanded="true" />
-                <element signature="e#2384#2385#0" expanded="true" />
-                <element signature="e#2448#2449#0" expanded="true" />
+                <element signature="e#3853#3854#0" expanded="true" />
+                <element signature="e#3924#3925#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MainUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MenuFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+              <folding>
+                <element signature="e#2451#2452#0" expanded="true" />
+                <element signature="e#2504#2505#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,9 +179,9 @@
         <option value="$PROJECT_DIR$/smartasmodule/src/main/java/com/lisnykov/model/entity/Users.java" />
         <option value="$PROJECT_DIR$/smartasui/pom.xml" />
         <option value="$PROJECT_DIR$/smartasmodule/src/main/java/com/lisnykov/model/entity/ResumeData.java" />
-        <option value="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/ResumeLayoutFactory.java" />
         <option value="$PROJECT_DIR$/smartasutils/src/main/java/com/lisnykov/utils/Gender.java" />
         <option value="$PROJECT_DIR$/smartasutils/src/main/java/com/lisnykov/utils/ResumeStringUtils.java" />
+        <option value="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/ResumeLayoutFactory.java" />
         <option value="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java" />
       </list>
     </option>
@@ -1410,16 +1431,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485980837655</updated>
-      <workItem from="1485980848509" duration="37545000" />
+      <workItem from="1485980848509" duration="41268000" />
     </task>
+    <task id="LOCAL-00001" summary="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout">
+      <created>1486034624621</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1486034624621</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37545000" />
+    <option name="totallyTimeSpent" value="41268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="827" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1443,10 +1472,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42616034" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42616034" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1506,6 +1535,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1595,26 +1628,6 @@
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MainUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MenuFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2451#2452#0" expanded="false" />
-            <element signature="e#2504#2505#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1761,16 +1774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/ResumeLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="38" column="81" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartasutils/src/main/java/com/lisnykov/utils/ResumeStringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1779,16 +1782,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java">
+    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+        <state relative-caret-position="129">
+          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MenuFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <folding>
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2504#2505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/ResumeLayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2301#2302#0" expanded="true" />
-            <element signature="e#2336#2337#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2448#2449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
+            <element signature="e#3924#3925#0" expanded="true" />
           </folding>
         </state>
       </provider>
