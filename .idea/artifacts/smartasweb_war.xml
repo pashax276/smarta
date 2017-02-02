@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="smartasweb:war">
+    <output-path>$PROJECT_DIR$/smartasweb/target</output-path>
+    <root id="archive" name="smartas-web-1.4.4.RELEASE.war">
+      <element id="artifact" artifact-name="smartasweb:war exploded" />
+    </root>
+  </artifact>
+</component>

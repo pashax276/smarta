@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/smartas.iml" filepath="$PROJECT_DIR$/smartas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartasmodule/smartasmodule.iml" filepath="$PROJECT_DIR$/smartasmodule/smartasmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartasrepository/smartasrepository.iml" filepath="$PROJECT_DIR$/smartasrepository/smartasrepository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartasservice/smartasservice.iml" filepath="$PROJECT_DIR$/smartasservice/smartasservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartasui/smartasui.iml" filepath="$PROJECT_DIR$/smartasui/smartasui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartasutils/smartasutils.iml" filepath="$PROJECT_DIR$/smartasutils/smartasutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartasweb/smartasweb.iml" filepath="$PROJECT_DIR$/smartasweb/smartasweb.iml" />
+    </modules>
+  </component>
+</project>

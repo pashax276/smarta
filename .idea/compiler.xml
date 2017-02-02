@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="smartasmodule" />
+        <module name="smartasrepository" />
+        <module name="smartasservice" />
+        <module name="smartasui" />
+        <module name="smartasutils" />
+        <module name="smartasweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="smartas" target="1.5" />
+      <module name="smartasmodule" target="1.5" />
+      <module name="smartasrepository" target="1.5" />
+      <module name="smartasservice" target="1.5" />
+      <module name="smartasui" target="1.6" />
+      <module name="smartasutils" target="1.5" />
+      <module name="smartasweb" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
