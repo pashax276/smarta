@@ -2,11 +2,16 @@ package com.lisnykov.ui.resume;
 
 import com.lisnykov.model.entity.ResumeData;
 import com.lisnykov.utils.Gender;
+import com.lisnykov.utils.NotificationMessages;
 import com.lisnykov.utils.ResumeStringUtils;
+import com.sun.deploy.security.ValidationState;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
-import com.vaadin.server.FontAwesome;
+import com.vaadin.data.fieldgroup.FieldGroup;
+import com.vaadin.server.Page;
+import com.vaadin.shared.Position;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+
 
 /**
  * Created by pasha on 2/2/17.
@@ -14,7 +19,7 @@ import com.vaadin.ui.themes.ValoTheme;
 @org.springframework.stereotype.Component
 public class AddResumeMainLayoutFactory {
 
-    private class AddResumeMainLayout extends VerticalLayout {
+    private class AddResumeMainLayout extends VerticalLayout implements Button.ClickListener {
 
         private TextField firstName;
         private TextField lastName;
@@ -60,6 +65,10 @@ public class AddResumeMainLayoutFactory {
             saveButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
             clearButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
 
+
+            saveButton.addClickListener(this);
+            clearButton.addClickListener(this);
+
             gender.addItem(Gender.MALE.getString());
             gender.addItem(Gender.FEMALE.getString());
 
@@ -68,6 +77,7 @@ public class AddResumeMainLayoutFactory {
             email.setNullRepresentation("");
             address.setNullRepresentation("");
             zipCode.setNullRepresentation("");
+            age.setNullRepresentation("");
 
             return this;
         }
@@ -83,6 +93,7 @@ public class AddResumeMainLayoutFactory {
         public Component layout() {
 
             setMargin(true);
+            country.setTextInputAllowed(true);
 
             address.setWidth("100%");
 
@@ -108,6 +119,60 @@ public class AddResumeMainLayoutFactory {
         }
 
 
+        @Override
+        public void buttonClick(Button.ClickEvent clickEvent) {
+
+            if (clickEvent.getSource() == this.saveButton) {
+                save();
+            } else {
+                clearField();
+            }
+
+        }
+
+        private void clearField() {
+
+            firstName.setValue(null);
+            lastName.setValue(null);
+            email.setValue(null);
+            address.setValue(null);
+            zipCode.setValue(null);
+            country.setValue(null);
+            phoneNumber.setValue(null);
+            phoneType.setValue(null);
+            contactedVia.setValue(null);
+            gender.setValue(null);
+            age.setValue(null);
+
+        }
+
+        private void save() {
+            try {
+                fieldGroup.commit();
+
+            } catch (FieldGroup.CommitException e) {
+
+                Notification.show(NotificationMessages.RESUME_SAVE_VALIDATION_ERROR_TITLE.getString(),
+                        NotificationMessages.RESUME_SAVE_VALIDATION_ERROR_DESCRIPTION.getString(),
+                        Notification.Type.ERROR_MESSAGE);
+
+                return;
+
+            }
+            Notification notification = new Notification(NotificationMessages.RESUME_SAVE_VALIDATION_SUCCES.getString());
+            notification
+                    .setDescription("<span>This application is not real, it only demonstrates an application built with the <a href=\"https://vaadin.com\">Vaadin framework</a>.</span> <span>No username or password is required, just click the <b>Sign In</b> button to continue.</span>");
+            notification.setHtmlContentAllowed(true);
+            notification.setStyleName("tray dark small closable login-help");
+            notification.setPosition(Position.BOTTOM_CENTER);
+            notification.setDelayMsec(20000);
+            notification.show(Page.getCurrent());
+            notification.setStyleName(ValoTheme.NOTIFICATION_SUCCESS);
+
+            System.out.println(resumeData);
+
+            clearField();
+        }
     }
 
     public Component createComponent() {

@@ -28,6 +28,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.6.RELEASE" level="project" />
     <orderEntry type="module" module-name="smartasutils" />
     <orderEntry type="module" module-name="smartasmodule" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin.external.google:guava:16.0.1.vaadin1" level="project" />
   </component>
 </module>

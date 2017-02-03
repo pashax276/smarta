@@ -1,32 +1,52 @@
 package com.lisnykov.model.entity;
 
+import javax.validation.constraints.*;
 import java.util.Date;
 
 /**
  * Created by pasha on 2/1/17.
  */
+
 public class ResumeData {
 
-
+    @NotNull(message = "First name is required")
     private String firstName;
+    @NotNull(message = "Last name is required")
     private String lastName;
     private String address;
+
+    @NotNull(message = "Email is required")
+    //@Pattern(regexp = ".+@.+\\\\.[a-z]+", message = "must be valid(ex.: name@gmail.com)")
     private String email;
+
+    @NotNull(message = "Phone number is required")
     private String phone;
     private String website;
+
+    @NotNull(message = "Education is required")
     private String education;
+
+    @NotNull(message = "Education is required")
     private String experience;
     private String language;
+
+    @NotNull(message = "Gender is required")
     private String gender;
     private Integer zipCode;
     private String country;
     private String phoneType;
 
+    @Min(value = 0, message = "Minimum value is 0")
+    @Max(value = 100, message = "Maximun value is 100")
+    private Integer age;
+
     public ResumeData() {
 
     }
 
-    public ResumeData(String firstName, String lastName, String address, String email, String phone, String website, String education, String experience, String language, String gender, Integer zipCode, String country, String phoneType) {
+    public ResumeData(String firstName, String lastName, String address, String email, String phone, String website,
+                      String education, String experience, String language, String gender, Integer zipCode,
+                      String country, String phoneType, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -40,6 +60,7 @@ public class ResumeData {
         this.zipCode = zipCode;
         this.country = country;
         this.phoneType = phoneType;
+        this.age = age;
     }
 
     public String getFirstName() {
@@ -146,6 +167,14 @@ public class ResumeData {
         this.phoneType = phoneType;
     }
 
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
         return "ResumeData{" +
@@ -162,6 +191,7 @@ public class ResumeData {
                 ", zipCode=" + zipCode +
                 ", country='" + country + '\'' +
                 ", phoneType='" + phoneType + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
