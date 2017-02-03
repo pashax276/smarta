@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdd5044e-2c58-48e9-b876-935d74e02b9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartasutils/src/main/java/com/lisnykov/utils/NotificationMessages.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/target/classes/com/lisnykov/model/entity/ResumeData.class" afterPath="$PROJECT_DIR$/smartasmodule/target/classes/com/lisnykov/model/entity/ResumeData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/target/classes/com/lisnykov/ui/resume/AddResumeMainLayoutFactory$AddResumeMainLayout.class" afterPath="$PROJECT_DIR$/smartasui/target/classes/com/lisnykov/ui/resume/AddResumeMainLayoutFactory$AddResumeMainLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/target/classes/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.class" afterPath="$PROJECT_DIR$/smartasui/target/classes/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE.war" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-module-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-module-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-ui-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-ui-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-utils-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-utils-0.0.1-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/pom.xml" afterPath="$PROJECT_DIR$/smartasmodule/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/smartasmodule.iml" afterPath="$PROJECT_DIR$/smartasmodule/smartasmodule.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/src/main/java/com/lisnykov/model/entity/ResumeData.java" afterPath="$PROJECT_DIR$/smartasmodule/src/main/java/com/lisnykov/model/entity/ResumeData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/smartasui.iml" afterPath="$PROJECT_DIR$/smartasui/smartasui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java" afterPath="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,7 +93,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="354">
               <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,7 +141,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#713#714#0" expanded="false" />
+                <element signature="e#776#777#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1469,7 +1464,7 @@
       <updated>1485980837655</updated>
       <workItem from="1485980848509" duration="46696000" />
       <workItem from="1486070595360" duration="32000" />
-      <workItem from="1486070736694" duration="4878000" />
+      <workItem from="1486070736694" duration="5000000" />
     </task>
     <task id="LOCAL-00001" summary="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout">
       <created>1486034624621</created>
@@ -1478,11 +1473,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486034624621</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AddResumeMainLayoutFactory - updated&#10;ResumeData&#10;NotificationMessages&#10;smarts-module">
+      <created>1486091259334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486091259334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51606000" />
+    <option name="totallyTimeSpent" value="51728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="827" extended-state="6" />
@@ -1576,7 +1578,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout" />
+    <MESSAGE value="AddResumeMainLayoutFactory - updated&#10;ResumeData&#10;NotificationMessages&#10;smarts-module" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddResumeMainLayoutFactory - updated&#10;ResumeData&#10;NotificationMessages&#10;smarts-module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1630,7 +1633,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1668,7 +1673,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#776#777#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1715,7 +1724,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1753,7 +1764,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#776#777#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1853,7 +1868,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#776#777#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1876,7 +1895,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="48" column="44" lean-forward="false" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
