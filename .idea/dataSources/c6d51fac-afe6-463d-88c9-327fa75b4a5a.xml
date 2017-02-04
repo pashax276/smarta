@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="smartas@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="smartas">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="explorecalifornia"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="questiondb"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="taskdb"/>
+    <schema id="10" parent="1" name="tasksdb"/>
+    <schema id="11" parent="1" name="udemy"/>
+    <table id="12" parent="2" name="resume"/>
+    <column id="13" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="12" name="address">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="15" parent="12" name="age">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="16" parent="12" name="country">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="17" parent="12" name="education">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="12" name="email">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="12" name="experience">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="12" name="first_name">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="12" name="gender">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="12" name="language">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="12" name="last_name">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="12" name="phone">
+      <Position>12</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="12" name="phone_type">
+      <Position>13</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="26" parent="12" name="website">
+      <Position>14</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="27" parent="12" name="zip_code">
+      <Position>15</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="28" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

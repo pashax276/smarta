@@ -2,47 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdd5044e-2c58-48e9-b876-935d74e02b9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_el_api_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_enterprise_cdi_api_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_11_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_11_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_interceptor_jboss_interceptors_api_1_1_spec_1_0_0_Beta1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_4_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_4_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartasmodule/src/main/resources/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartasrepository/src/main/java/com/lisnykov/repository/resume/ResumeRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartasservice/src/main/java/com/lisnykov/service/addresume/AddResumeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartasservice/src/main/java/com/lisnykov/service/addresume/AddResumeServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/target/classes/com/lisnykov/model/entity/ResumeData.class" afterPath="$PROJECT_DIR$/smartasmodule/target/classes/com/lisnykov/model/entity/ResumeData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/target/smartas-module-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasmodule/target/smartas-module-0.0.1-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/target/classes/com/lisnykov/ui/resume/AddResumeMainLayoutFactory$AddResumeMainLayout.class" afterPath="$PROJECT_DIR$/smartasui/target/classes/com/lisnykov/ui/resume/AddResumeMainLayoutFactory$AddResumeMainLayout.class" />
@@ -56,26 +15,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-module-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-module-0.0.1-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-ui-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-ui-0.0.1-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-utils-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smartasweb/target/smartas-web-1.4.4.RELEASE/WEB-INF/lib/smartas-utils-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/smartasweb_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/smartasweb_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/pom.xml" afterPath="$PROJECT_DIR$/smartasmodule/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/smartasmodule.iml" afterPath="$PROJECT_DIR$/smartasmodule/smartasmodule.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/src/main/java/com/lisnykov/model/entity/ResumeData.java" afterPath="$PROJECT_DIR$/smartasmodule/src/main/java/com/lisnykov/model/entity/ResumeData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasmodule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/smartasmodule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasrepository/pom.xml" afterPath="$PROJECT_DIR$/smartasrepository/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasrepository/smartasrepository.iml" afterPath="$PROJECT_DIR$/smartasrepository/smartasrepository.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasservice/pom.xml" afterPath="$PROJECT_DIR$/smartasservice/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasservice/smartasservice.iml" afterPath="$PROJECT_DIR$/smartasservice/smartasservice.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/pom.xml" afterPath="$PROJECT_DIR$/smartasui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/smartasui.iml" afterPath="$PROJECT_DIR$/smartasui/smartasui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MainUI.java" afterPath="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/commons/MainUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java" afterPath="$PROJECT_DIR$/smartasui/src/main/java/com/lisnykov/ui/resume/AddResumeMainLayoutFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/smartasui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/smartasui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasutils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/smartasutils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/pom.xml" afterPath="$PROJECT_DIR$/smartasweb/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/smartasweb.iml" afterPath="$PROJECT_DIR$/smartasweb/smartasweb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/src/main/java/com/lisnykov/run/SpringBootApplication.java" afterPath="$PROJECT_DIR$/smartasweb/src/main/java/com/lisnykov/run/SpringBootApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartasweb/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/smartasweb/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1828,7 +1772,7 @@
       <workItem from="1485980848509" duration="46696000" />
       <workItem from="1486070595360" duration="32000" />
       <workItem from="1486070736694" duration="5092000" />
-      <workItem from="1486113819801" duration="13113000" />
+      <workItem from="1486113819801" duration="13185000" />
     </task>
     <task id="LOCAL-00001" summary="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout">
       <created>1486034624621</created>
@@ -1844,11 +1788,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486091259334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AddResumeService&#10;AddResumeServiceImpl&#10;ResumeRepository">
+      <created>1486183043488</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1486183043488</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64933000" />
+    <option name="totallyTimeSpent" value="65005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="827" extended-state="0" />
@@ -1905,7 +1856,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AddResumeMainLayoutFactory&#10;ResumeFactoryLayout" />
     <MESSAGE value="AddResumeMainLayoutFactory - updated&#10;ResumeData&#10;NotificationMessages&#10;smarts-module" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddResumeMainLayoutFactory - updated&#10;ResumeData&#10;NotificationMessages&#10;smarts-module" />
+    <MESSAGE value="AddResumeService&#10;AddResumeServiceImpl&#10;ResumeRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddResumeService&#10;AddResumeServiceImpl&#10;ResumeRepository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
