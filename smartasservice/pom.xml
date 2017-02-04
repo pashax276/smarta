@@ -11,6 +11,18 @@
 
     <artifactId>smartas-service</artifactId>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.lisnykov</groupId>
+            <artifactId>smartas-module</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lisnykov</groupId>
+            <artifactId>smartas-repository</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -20,7 +20,7 @@ import org.springframework.context.ApplicationContext;
 @Theme("valo")
 public class MainUI extends UI {
 
-    public static final String NAME = "/ui";
+    public static final String NAME = "/";
 
     @Autowired
     private MenuFactory menuFactory;

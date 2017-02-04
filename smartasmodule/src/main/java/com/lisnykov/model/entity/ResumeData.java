@@ -1,43 +1,72 @@
 package com.lisnykov.model.entity;
 
-import javax.validation.constraints.*;
-import java.util.Date;
+import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 /**
  * Created by pasha on 2/1/17.
  */
-
+@Entity
+@Table(name = "RESUME")
 public class ResumeData {
 
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private Integer Id;
+
     @NotNull(message = "First name is required")
+    @Column(name = "FIRST_NAME")
     private String firstName;
+
     @NotNull(message = "Last name is required")
+    @Column(name = "LAST_NAME")
     private String lastName;
+
+    @Column(name = "ADDRESS")
     private String address;
 
     @NotNull(message = "Email is required")
     //@Pattern(regexp = ".+@.+\\\\.[a-z]+", message = "must be valid(ex.: name@gmail.com)")
+    @Column(name = "EMAIL")
     private String email;
 
-    @NotNull(message = "Phone number is required")
+    //@NotNull(message = "Phone number is required")
+    @Column(name = "PHONE")
     private String phone;
+
+    @Column(name = "PHONE_TYPE")
+    private String phoneType;
+
+    @Column(name = "WEBSITE")
     private String website;
 
     @NotNull(message = "Education is required")
+    @Column(name = "EDUCATION")
     private String education;
 
-    @NotNull(message = "Education is required")
+    //@NotNull(message = "Experience is required")
+    @Column(name = "EXPERIENCE")
     private String experience;
+
+    @Column(name = "LANGUAGE")
     private String language;
 
     @NotNull(message = "Gender is required")
+    @Column(name = "GENDER")
     private String gender;
+
+    @Column(name = "ZIP_CODE")
     private Integer zipCode;
+
+    @Column(name = "COUNTRY")
     private String country;
-    private String phoneType;
 
     @Min(value = 0, message = "Minimum value is 0")
-    @Max(value = 100, message = "Maximun value is 100")
+    @Max(value = 100, message = "Maximum value is 100")
+    @Column(name = "AGE")
     private Integer age;
 
     public ResumeData() {
@@ -61,6 +90,14 @@ public class ResumeData {
         this.country = country;
         this.phoneType = phoneType;
         this.age = age;
+    }
+
+    public Integer getId() {
+        return Id;
+    }
+
+    public void setId(Integer id) {
+        Id = id;
     }
 
     public String getFirstName() {

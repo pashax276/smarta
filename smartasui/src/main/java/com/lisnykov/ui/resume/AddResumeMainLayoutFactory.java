@@ -1,16 +1,19 @@
 package com.lisnykov.ui.resume;
 
 import com.lisnykov.model.entity.ResumeData;
+import com.lisnykov.service.addresume.AddResumeService;
 import com.lisnykov.utils.Gender;
 import com.lisnykov.utils.NotificationMessages;
 import com.lisnykov.utils.ResumeStringUtils;
-import com.sun.deploy.security.ValidationState;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.server.Page;
 import com.vaadin.shared.Position;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.xml.soap.Text;
 
 
 /**
@@ -27,12 +30,14 @@ public class AddResumeMainLayoutFactory {
         private TextField address;
         private TextField zipCode;
         private ComboBox country;
-        private TextField phoneNumber;
+        private TextField phone;
         private ComboBox phoneType;
         private TextField website;
         private ComboBox contactedVia;
         private ComboBox gender;
         private TextField age;
+        private TextField education;
+        private TextArea experience;
 
         private Button saveButton;
         private Button clearButton;
@@ -54,10 +59,13 @@ public class AddResumeMainLayoutFactory {
             address = new TextField(ResumeStringUtils.ADDRESS.getString());
             zipCode = new TextField(ResumeStringUtils.ZIP_CODE.getString());
             country = new ComboBox(ResumeStringUtils.COUNTRY.getString());
-            phoneNumber = new TextField(ResumeStringUtils.PHONE_NUMBER.getString());
+            phone = new TextField(ResumeStringUtils.PHONE_NUMBER.getString());
             phoneType = new ComboBox("");
             website = new TextField(ResumeStringUtils.WEBSITE.getString());
             contactedVia = new ComboBox(ResumeStringUtils.CONTACTED_VIA.getString());
+            education = new TextField("Education");
+            experience = new TextArea("Experience");
+
 
             saveButton = new Button(ResumeStringUtils.SAVE_BUTTON.getString());
             clearButton = new Button(ResumeStringUtils.CLEARE_BUTTON.getString());
@@ -69,8 +77,14 @@ public class AddResumeMainLayoutFactory {
             saveButton.addClickListener(this);
             clearButton.addClickListener(this);
 
+            country.addItem("USA");
+
             gender.addItem(Gender.MALE.getString());
             gender.addItem(Gender.FEMALE.getString());
+
+            phoneType.addItem("Mobile");
+            phoneType.addItem("Home");
+            phoneType.addItem("Work");
 
             firstName.setNullRepresentation("");
             lastName.setNullRepresentation("");
@@ -96,8 +110,9 @@ public class AddResumeMainLayoutFactory {
             country.setTextInputAllowed(true);
 
             address.setWidth("100%");
+            experience.setWidth("100%");
 
-            GridLayout gridLayout = new GridLayout(2, 6);
+            GridLayout gridLayout = new GridLayout(2, 10);
             gridLayout.setSpacing(true);
             gridLayout.setSizeUndefined();
 
@@ -108,12 +123,17 @@ public class AddResumeMainLayoutFactory {
             gridLayout.addComponent(age, 1, 1);
 
             gridLayout.addComponent(email, 0, 2);
+            gridLayout.addComponent(education, 1,2);
 
             gridLayout.addComponent(address, 0, 3, 1, 3);
             gridLayout.addComponent(zipCode, 0, 4);
             gridLayout.addComponent(country, 1, 4);
+            gridLayout.addComponent(experience,0,5,1,5);
 
-            gridLayout.addComponent(new HorizontalLayout(saveButton, clearButton), 0, 5);
+            gridLayout.addComponent(phone,0,6);
+            gridLayout.addComponent(phoneType, 1,6);
+
+            gridLayout.addComponent(new HorizontalLayout(saveButton, clearButton), 0, 9);
 
             return gridLayout;
         }
@@ -138,7 +158,7 @@ public class AddResumeMainLayoutFactory {
             address.setValue(null);
             zipCode.setValue(null);
             country.setValue(null);
-            phoneNumber.setValue(null);
+            phone.setValue(null);
             phoneType.setValue(null);
             contactedVia.setValue(null);
             gender.setValue(null);
@@ -171,9 +191,14 @@ public class AddResumeMainLayoutFactory {
 
             System.out.println(resumeData);
 
+            addResumeService.saveResume(resumeData);
+
             clearField();
         }
     }
+
+    @Autowired
+    private AddResumeService addResumeService;
 
     public Component createComponent() {
         return new AddResumeMainLayout().init().bind().layout();
