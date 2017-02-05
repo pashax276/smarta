@@ -21,7 +21,7 @@ public enum  ResumeStringUtils {
     PHONE_TYPE(""),
     CONTACTED_VIA("I prefer to be contacted via"),
     SAVE_BUTTON("Save"),
-    CLEARE_BUTTON("Clear"),
+    CLEAR_BUTTON("Clear"),
     WEBSITE("Website"),
     EMAIL("Email"),
     ;

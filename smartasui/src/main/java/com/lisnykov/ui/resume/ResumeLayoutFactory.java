@@ -22,6 +22,8 @@ public class ResumeLayoutFactory extends VerticalLayout implements View {
 
     @Autowired
     private AddResumeMainLayoutFactory addResumeMainLayoutFactory;
+    @Autowired
+    private AddResumeExperienceFactory addResumeExperienceFactory;
 
     private TabSheet tabSheet;
 
@@ -38,7 +40,7 @@ public class ResumeLayoutFactory extends VerticalLayout implements View {
         tabSheet.setWidth("100%");
 
         Component addResumeMainTab = addResumeMainLayoutFactory.createComponent();
-        Component addResumeExperienceTab = new Label("Experience");
+        Component addResumeExperienceTab = addResumeExperienceFactory.createComponent();
         Component addResumeEducationTab = new Label("Education");
         Component addResumeSkillsTab = new Label("Skills");
         Component addResumeInterestsTab = new Label("Interests");

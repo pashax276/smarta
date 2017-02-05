@@ -110,5 +110,6 @@
     <orderEntry type="library" name="Maven: com.vaadin.external.google:guava:16.0.1.vaadin1" level="project" />
     <orderEntry type="module" module-name="smartasservice" />
     <orderEntry type="module" module-name="smartasrepository" />
+    <orderEntry type="library" name="Maven: org.vaadin:viritin:1.59" level="project" />
   </component>
 </module>

@@ -99,6 +99,7 @@
           <element id="archive" name="smartas-repository-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="smartasrepository" />
           </element>
+          <element id="library" level="project" name="Maven: org.vaadin:viritin:1.59" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.vaadin:viritin:1.59">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/vaadin/viritin/1.59/viritin-1.59.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/vaadin/viritin/1.59/viritin-1.59-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/vaadin/viritin/1.59/viritin-1.59-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -13,8 +13,6 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.xml.soap.Text;
-
 
 /**
  * Created by pasha on 2/2/17.
@@ -48,7 +46,7 @@ public class AddResumeMainLayoutFactory {
 
         public AddResumeMainLayout init() {
 
-            fieldGroup = new BeanFieldGroup<ResumeData>(ResumeData.class);
+            fieldGroup = new BeanFieldGroup<>(ResumeData.class);
             resumeData = new ResumeData();
 
             firstName = new TextField(ResumeStringUtils.FIRST_NAME.getString());
@@ -68,7 +66,7 @@ public class AddResumeMainLayoutFactory {
 
 
             saveButton = new Button(ResumeStringUtils.SAVE_BUTTON.getString());
-            clearButton = new Button(ResumeStringUtils.CLEARE_BUTTON.getString());
+            clearButton = new Button(ResumeStringUtils.CLEAR_BUTTON.getString());
 
             saveButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
             clearButton.setStyleName(ValoTheme.BUTTON_PRIMARY);

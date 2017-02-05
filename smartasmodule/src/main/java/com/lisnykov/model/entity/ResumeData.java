@@ -29,11 +29,10 @@ public class ResumeData {
     private String address;
 
     @NotNull(message = "Email is required")
-    //@Pattern(regexp = ".+@.+\\\\.[a-z]+", message = "must be valid(ex.: name@gmail.com)")
     @Column(name = "EMAIL")
     private String email;
 
-    //@NotNull(message = "Phone number is required")
+    @NotNull(message = "Phone number is required")
     @Column(name = "PHONE")
     private String phone;
 
@@ -47,7 +46,7 @@ public class ResumeData {
     @Column(name = "EDUCATION")
     private String education;
 
-    //@NotNull(message = "Experience is required")
+    @NotNull(message = "Experience is required")
     @Column(name = "EXPERIENCE")
     private String experience;
 

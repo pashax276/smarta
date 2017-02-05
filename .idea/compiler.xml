@@ -19,7 +19,7 @@
       <module name="smartasmodule" target="1.5" />
       <module name="smartasrepository" target="1.5" />
       <module name="smartasservice" target="1.5" />
-      <module name="smartasui" target="1.6" />
+      <module name="smartasui" target="1.8" />
       <module name="smartasutils" target="1.5" />
       <module name="smartasweb" target="1.6" />
     </bytecodeTargetLevel>
