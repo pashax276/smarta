@@ -11,8 +11,12 @@ import java.util.List;
  * Created by pasha on 2/4/17.
  */
 @Repository
-public interface GameDataRepository extends JpaRepository<GameData, Integer>{
+public interface GameDataRepository extends JpaRepository<GameData, Integer> {
 
     @Query(value = "SELECT q FROM GameData q ORDER BY q.name")
     List<GameData> getAllData();
+
+    @Query(value = "SELECT q FROM GameData q")
+    List<GameData> findByNameLikeIgnoreCase(String nameFilter);
+
 }
