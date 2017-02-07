@@ -1,8 +1,8 @@
 package com.lisnykov.ui.commons;
 
 
+import com.lisnykov.ui.game.GameLayoutFactory;
 import com.lisnykov.ui.navigator.SmartAsNavigator;
-import com.lisnykov.ui.resume.ResumeLayoutFactory;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.server.VaadinRequest;
@@ -20,7 +20,7 @@ import org.springframework.context.ApplicationContext;
 @Theme("valo")
 public class MainUI extends UI {
 
-    public static final String NAME = "/";
+    public static final String NAME = "/ui";
 
     @Autowired
     private MenuFactory menuFactory;
@@ -73,7 +73,7 @@ public class MainUI extends UI {
         SmartAsNavigator navigator = new SmartAsNavigator(this, changeTab);
         applicationContext.getAutowireCapableBeanFactory().autowireBean(navigator);
         navigator.addProvider(viewProvider);
-        navigator.navigateTo(ResumeLayoutFactory.NAME);
+        navigator.navigateTo(GameLayoutFactory.NAME);
     }
 
 

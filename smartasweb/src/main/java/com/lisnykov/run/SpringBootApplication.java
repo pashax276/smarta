@@ -8,12 +8,14 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
  * Created by pasha on 2/1/17.
  */
 @Configuration
 @EnableAutoConfiguration
+@EnableWebSecurity
 @ComponentScan(("com.lisnykov"))
 @EnableJpaRepositories(("com.lisnykov"))
 @EntityScan(("com.lisnykov"))
