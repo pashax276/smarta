@@ -117,6 +117,7 @@ public class GameData {
     public String toString() {
         return "GameData{" +
                 "Id=" + Id +
+                ", name='" + name + '\'' +
                 ", question='" + question + '\'' +
                 ", type='" + type + '\'' +
                 ", date=" + date +

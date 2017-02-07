@@ -2,15 +2,19 @@ package com.lisnykov.ui.game;
 
 import com.lisnykov.model.entity.GameData;
 import com.lisnykov.service.addgamedata.AddGameDataService;
+import com.lisnykov.service.showalldata.ShowAllGameDataService;
 import com.lisnykov.utils.GameDataUtils;
 import com.lisnykov.utils.NotificationMessages;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
+import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.server.Page;
 import com.vaadin.shared.Position;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 /**
  * Created by pasha on 2/4/17.
@@ -39,6 +43,8 @@ public class AddGameDataLayoutFactory {
 
         private GameDataSavedListener gameDataSavedListener;
 
+
+
         public AddGameDataLayout(GameDataSavedListener gameDataSavedListener) {
             this.gameDataSavedListener = gameDataSavedListener;
         }
@@ -46,6 +52,7 @@ public class AddGameDataLayoutFactory {
         public AddGameDataLayout init() {
 
             fieldGameGroup = new BeanFieldGroup<>(GameData.class);
+
             gameData = new GameData();
 
             name = new TextField(GameDataUtils.QUESTION_NAME.getString());
@@ -60,9 +67,21 @@ public class AddGameDataLayoutFactory {
             saveButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
             clearButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
 
+
+            name.setNullRepresentation("");
+            question.setNullRepresentation("");
+            points.setNullRepresentation("");
+            answer.setNullRepresentation("");
+
             return this;
         }
 
+        public AddGameDataLayout load() {
+            List<GameData> listData = showAllGameDataService.getGameDataType();
+            type.addItems(listData);
+
+            return this;
+        }
 
         public AddGameDataLayout bind() {
             fieldGameGroup.bindMemberFields(this);
@@ -74,6 +93,7 @@ public class AddGameDataLayoutFactory {
 
         public com.vaadin.ui.Component layout() {
 
+            type.setTextInputAllowed(true);
             type.setNullSelectionAllowed(false);
             type.setRequired(true);
             type.setNewItemsAllowed(true);
@@ -133,7 +153,9 @@ public class AddGameDataLayoutFactory {
 
             Notification notification = new Notification(NotificationMessages.RESUME_SAVE_VALIDATION_SUCCES.getString());
             notification
-                    .setDescription("<span>This application is not real, it only demonstrates an application built with the <a href=\"https://vaadin.com\">Vaadin framework</a>.</span> <span>No username or password is required, just click the <b>Sign In</b> button to continue.</span>");
+                    .setDescription("<span>This application is not real, it only demonstrates an application built with " +
+                            "the <a href=\"https://vaadin.com\">Vaadin framework</a>.</span> <span>No username or password " +
+                            "is required, just click the <b>Sign In</b> button to continue.</span>");
             notification.setHtmlContentAllowed(true);
             notification.setStyleName("tray dark small closable login-help");
             notification.setPosition(Position.BOTTOM_CENTER);
@@ -150,12 +172,16 @@ public class AddGameDataLayoutFactory {
             clearField();
         }
 
+
     }
+
+    @Autowired
+    private ShowAllGameDataService showAllGameDataService;
 
     @Autowired
     private AddGameDataService addGameDataService;
 
     public Component createComponent(GameDataSavedListener gameDataSavedListener) {
-        return new AddGameDataLayout(gameDataSavedListener).init().bind().layout();
+        return new AddGameDataLayout(gameDataSavedListener).init().load().bind().layout();
     }
 }

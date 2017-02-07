@@ -19,4 +19,7 @@ public interface GameDataRepository extends JpaRepository<GameData, Integer> {
     @Query(value = "SELECT q FROM GameData q")
     List<GameData> findByNameLikeIgnoreCase(String nameFilter);
 
+    @Query(value = "SELECT q.type from GameData q")
+    List<GameData> ComboType();
+
 }

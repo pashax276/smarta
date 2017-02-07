@@ -19,4 +19,8 @@ public class ShowAllGameDataServiceImpl implements ShowAllGameDataService {
     public List<GameData> getAllGameData() {
         return gameDataRepository.getAllData();
     }
+
+    public List<GameData> getGameDataType() {
+        return gameDataRepository.ComboType();
+    }
 }

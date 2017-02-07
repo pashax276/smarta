@@ -11,4 +11,6 @@ public interface ShowAllGameDataService {
 
     List<GameData> getAllGameData();
 
+    List<GameData> getGameDataType();
+
 }

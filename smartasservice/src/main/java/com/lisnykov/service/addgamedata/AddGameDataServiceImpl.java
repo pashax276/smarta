@@ -5,6 +5,8 @@ import com.lisnykov.repository.gamedata.GameDataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by pasha on 2/4/17.
  */

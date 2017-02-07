@@ -1,10 +1,12 @@
 package com.lisnykov.ui.game;
 
 import com.lisnykov.model.entity.GameData;
-import com.lisnykov.repository.gamedata.GameDataRepository;
 import com.lisnykov.service.remove.RemoveGameDataService;
 import com.lisnykov.service.showalldata.ShowAllGameDataService;
 import com.lisnykov.ui.views.UIComponentBuilder;
+import com.vaadin.data.fieldgroup.BeanFieldGroup;
+import com.vaadin.data.fieldgroup.FieldGroup;
+import com.vaadin.data.util.BeanItem;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.*;
@@ -27,9 +29,6 @@ public class ShowAllGameDataLayoutFactory implements UIComponentBuilder {
     private Button edit;
     private Button delete;
 
-    private GameDataRepository gameDataRepository;
-
-
     @Autowired
     private RemoveGameDataService removeGameDataService;
 
@@ -41,8 +40,8 @@ public class ShowAllGameDataLayoutFactory implements UIComponentBuilder {
 
         public ShowAllGameDataLayout init() {
 
+
             delete = new Button(FontAwesome.TRASH_O);
-            delete.setEnabled(false);
             filterByName = new MTextField()
                     .withInputPrompt("Filter by name");
             edit = new MButton(FontAwesome.PENCIL_SQUARE_O, this::edit);
@@ -58,14 +57,34 @@ public class ShowAllGameDataLayoutFactory implements UIComponentBuilder {
             gameDataTable.setColumnOrder("name", "question", "type", "points", "answer");
             gameDataTable.removeColumn("id");
             gameDataTable.removeColumn("date");
+            gameDataTable.setEditorEnabled(true);
+
+//            gameDataTable.getEditorFieldGroup().addCommitHandler(new FieldGroup.CommitHandler() {
+//                @Override
+//                public void preCommit(FieldGroup.CommitEvent commitEvent) throws FieldGroup.CommitException {
+//                    BeanItem item = (BeanItem) commitEvent.getFieldBinder().getItemDataSource();
+//                    GameData gameData = (GameData) item.getBean();
+//
+//                    System.out.println("Pre commit: " + gameData.toString());
+//
+//                }
+//
+//                @Override
+//                public void postCommit(FieldGroup.CommitEvent commitEvent) throws FieldGroup.CommitException {
+//                    BeanItem item = (BeanItem) commitEvent.getFieldBinder().getItemDataSource();
+//                    GameData bean = (GameData) item.getBean();
+//
+//
+//                    System.out.println("Post commit: " + bean.toString());
+//
+//                    Notification.show("Changed saved");
+//                }
+//            });
+
             gameDataTable.setImmediate(true);
             gameDataTable.setSelectionMode(Grid.SelectionMode.MULTI);
 
             return this;
-        }
-
-        protected void adjustActionButtonState() {
-
         }
 
 
