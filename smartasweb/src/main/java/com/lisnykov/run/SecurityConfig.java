@@ -29,7 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable().exceptionHandling().authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/login"))
                 .and().authorizeRequests().antMatchers("/VAADIN/**", "/PUSH/**", "/UIDL/**", "/login", "/signup", "/login/**", "/logout", "/vaadinServlet/**").permitAll()
-                .antMatchers("/ui","/ui/**").fullyAuthenticated();
+                .antMatchers("/","/**").fullyAuthenticated();
 
     }
 

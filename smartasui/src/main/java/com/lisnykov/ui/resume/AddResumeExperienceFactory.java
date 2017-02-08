@@ -8,7 +8,7 @@ import com.vaadin.ui.*;
 @org.springframework.stereotype.Component
 public class AddResumeExperienceFactory {
 
-    private class AddResumeExperience extends VerticalLayout{
+    private class AddResumeExperience extends VerticalLayout {
 
         private TextField employer;
         private TextField jobTitle;
@@ -21,12 +21,7 @@ public class AddResumeExperienceFactory {
         private Calendar dateTo;
 
 
-
-
-
-
     }
-
 
 
     public Component createComponent() {

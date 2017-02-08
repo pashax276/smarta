@@ -3,8 +3,11 @@ package com.lisnykov.ui.commons;
 import com.lisnykov.ui.navigator.SmartAsNavigator;
 import com.lisnykov.utils.StringUtils;
 import com.vaadin.data.Property;
+import com.vaadin.server.FontAwesome;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.ui.*;
+import com.vaadin.ui.themes.ValoTheme;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 @org.springframework.stereotype.Component
 public class MenuFactory {
@@ -46,6 +49,7 @@ public class MenuFactory {
 
             addComponent(buildTitle());
             addComponent(mainMenu);
+            addComponent(logout());
 
             return this;
 
@@ -70,6 +74,24 @@ public class MenuFactory {
             String path = selectItemPath.toLowerCase().replaceAll("\\s+", "");
             SmartAsNavigator.navigate(path);
 
+        }
+
+        public Component logout() {
+            logout = new Button("Logout");
+            logout.setStyleName(ValoTheme.BUTTON_BORDERLESS);
+            logout.setIcon(FontAwesome.SIGN_OUT);
+
+            logout.addClickListener(new Button.ClickListener() {
+                @Override
+                public void buttonClick(Button.ClickEvent clickEvent) {
+                    SecurityContextHolder.clearContext();
+                    UI.getCurrent().getPage().setLocation("/login");
+                }
+            });
+
+            HorizontalLayout logoutWrapper = new HorizontalLayout(logout);
+
+            return logoutWrapper;
         }
     }
 

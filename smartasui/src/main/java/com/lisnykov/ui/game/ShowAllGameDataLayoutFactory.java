@@ -26,7 +26,6 @@ public class ShowAllGameDataLayoutFactory implements UIComponentBuilder {
     private List<GameData> gameDataList;
     private BeanItemContainer<GameData> container;
     private TextField filterByName;
-    private Button edit;
     private Button delete;
 
     @Autowired
@@ -44,8 +43,6 @@ public class ShowAllGameDataLayoutFactory implements UIComponentBuilder {
             delete = new Button(FontAwesome.TRASH_O);
             filterByName = new MTextField()
                     .withInputPrompt("Filter by name");
-            edit = new MButton(FontAwesome.PENCIL_SQUARE_O, this::edit);
-
             delete.addClickListener(this);
 
             setMargin(true);
@@ -95,7 +92,7 @@ public class ShowAllGameDataLayoutFactory implements UIComponentBuilder {
 
         public ShowAllGameDataLayout layout() {
             HorizontalLayout horizontalLayout = new HorizontalLayout();
-            horizontalLayout.addComponents(filterByName, edit, delete);
+            horizontalLayout.addComponents(filterByName, delete);
             addComponent(horizontalLayout);
             addComponent(gameDataTable);
             return this;
